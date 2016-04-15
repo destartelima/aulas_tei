@@ -9,6 +9,6 @@ foreach($cds as $cd){
 }*/
 $cds = $cdcol->fetchAll('Select * From cds');
 foreach($cds as $cd){
-	print "<p> $cd->titel($cd-interpret) - Ações:
-	<a href=\"zend-formulario-cd.php?id=$cd-id\">editar</a> |excluir </p>";
+	print "<p> $cd->titel($cd->interpret) - Ações:
+	<a href=\"zend-formulario-cd.php?id=$cd->id\">editar</a> |excluir </p>";
 }
